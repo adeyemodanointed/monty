@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdlib.h>
 
 /**
  * main - Monty bytecode interpreter
@@ -9,9 +10,6 @@
  */
 int main(int argc, char *argv[])
 {
-	/* global struct to hold flag for queue and stack length */
-	var_t var;
-
 	stack_t *stack = NULL;
 	unsigned int line_number = 0;
 	FILE *fs = NULL;

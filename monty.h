@@ -1,6 +1,9 @@
 #ifndef _MONTY_H_
 #define _MONTY_H_
 
+#define _POSIX_C_SOURCE  200809L
+#define _GNU_SOURCE
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -24,10 +27,7 @@ typedef struct var_s
 #define QUEUE 1
 
 /* global struct to hold flag for queue and stack length */
-extern var_t var;
-
-/* global struct to hold flag for queue and stack length */
-        var_t var;
+var_t var;
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
